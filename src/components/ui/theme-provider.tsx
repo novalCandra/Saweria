@@ -40,7 +40,7 @@ export function ThemeProvider({
         .matches
         ? "dark"
         : "light";
-
+      console.log("Themen di ganti");
       root.classList.add(systemTheme);
       return;
     }

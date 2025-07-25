@@ -9,7 +9,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/ui/theme-provider";
 
 function ButtonLandingPage() {
-  const { setThemeBagroundColor } = useTheme;
+  const { setTheme } = useTheme();
   return (
     <>
       <DropdownMenu>
@@ -21,13 +21,13 @@ function ButtonLandingPage() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem onClick={() => setThemeBagroundColor("light")}>
+          <DropdownMenuItem onClick={() => setTheme("light")}>
             Light
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setThemeBagroundColor("dark")}>
+          <DropdownMenuItem onClick={() => setTheme("dark")}>
             Dark
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setThemeBagroundColor("system")}>
+          <DropdownMenuItem onClick={() => setTheme("system")}>
             System
           </DropdownMenuItem>
         </DropdownMenuContent>
