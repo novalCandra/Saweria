@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,600;1,100;1,500;1,600&display=swap");
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -78,7 +77,7 @@
 }
 
 .dark {
-  --background: oklch(0.205 0 0);
+  --background: #11151d;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -111,10 +110,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-:root.dark {
-  background-color: #11151d;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -125,5 +120,6 @@
 }
 
 @theme {
-  --font-ibm: "IBM Plex Mono";
+  --linear-color-r: #8a5af2;
+  --linear-color-l: #171c26;
 }
