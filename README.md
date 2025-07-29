@@ -9,4 +9,4 @@
 - [x] halaman dashboard users
 - [x] halaman Dashboard Admins
 - [] halaman dashboard streammer
-- [|] menggubungkan data Database ke React JS
+- [] menggubungkan data Database ke React JS
